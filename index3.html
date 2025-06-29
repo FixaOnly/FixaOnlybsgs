@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hubungi Admin - FIXA XITERZ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Rajdhani', sans-serif;
+      background: #0a0a0a;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+
+    #tsparticles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #00ffe7;
+      text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+    }
+
+    .btn-wa {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #00ff88;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00ff88, 0 0 30px #00ff88;
+      transition: transform 0.2s;
+    }
+
+    .btn-wa:hover {
+      transform: scale(1.1);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff007a;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff007a, 0 0 20px #ff007a;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<div id="tsparticles"></div>
+
+<div class="content">
+  <h1>Hubungi Admin</h1>
+  <a href="https://wa.link/mbw937" class="btn-wa" target="_blank">💬 Chat Admin via WhatsApp</a><br>
+    <a href="https://t.me/VortexFiles" class="btn-wa" target="_blank">💬 Chat Admin via Telegram</a><br>
+  <a href="index.html" class="back-btn">← Kembali ke Menu</a>
+</div>
+
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },
+    background: { color: "#0a0a0a" },
+    fpsLimit: 60,
+    particles: {
+      number: { value: 30, density: { enable: true, area: 800 } },
+      color: { value: "#00ffee" },
+      shape: { type: "circle" },
+      opacity: { value: 0.3 },
+      size: { value: 3 },
+      move: {
+        enable: true,
+        speed: 0.5,
+        direction: "none",
+        random: true,
+        straight: false,
+        outModes: { default: "out" }
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: { enable: true, mode: "repulse" },
+        resize: true
+      },
+      modes: {
+        repulse: { distance: 100, duration: 0.4 }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

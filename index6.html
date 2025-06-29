@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimoni Pembeli - FIXA XITERZ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background: #0d0d0d;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #tsparticles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 700px;
+      height: calc(100vh - 90px);
+      overflow-y: auto;
+      margin: auto;
+      padding: 30px 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 0 25px #00f2ff55;
+      backdrop-filter: blur(5px);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5em;
+      color: #00f2ff;
+      margin-bottom: 25px;
+    }
+
+    .comment {
+      background: rgba(255, 255, 255, 0.08);
+      border-left: 4px solid #00f2ff;
+      padding: 15px 20px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      animation: fadeInUp 0.5s ease both;
+    }
+
+    .username {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #00eaff;
+    }
+
+    .stars {
+      color: gold;
+      margin-bottom: 5px;
+    }
+
+    .text {
+      font-size: 1em;
+      line-height: 1.4;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .container::-webkit-scrollbar-thumb {
+      background-color: #00f2ff;
+      border-radius: 10px;
+    }
+
+    /* Tombol Navigasi */
+    .nav-buttons {
+      text-align: center;
+      margin: 10px 0 20px 0;
+    }
+
+    .neon-btn {
+      display: inline-block;
+      margin: 0 15px;
+      padding: 12px 30px;
+      color: #00f2ff;
+      border: 2px solid #00f2ff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1em;
+      text-shadow: 0 0 8px #00f2ff;
+      box-shadow: 0 0 15px #00f2ff66;
+      transition: 0.3s ease;
+    }
+
+    .neon-btn:hover {
+      background: #00f2ff22;
+      box-shadow: 0 0 20px #00f2ff;
+    }
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>
+
+  <div class="container">
+    <div class="title">💬 Komentar & Rating Pembeli</div>
+
+    <!-- 10 Komentar -->
+    <div class="comment"><div class="username">👤 RafiTech</div><div class="stars">★★★★★</div><div class="text">Keren banget! UI nya smooth dan fiturnya lengkap, langsung auto langganan 🔥</div></div>
+    <div class="comment"><div class="username">👤 DeaDev</div><div class="stars">★★★★☆</div><div class="text">Mantap! Semua tools-nya jalan lancar, tampilannya juga kece banget 👌</div></div>
+    <div class="comment"><div class="username">👤 ZidanX</div><div class="stars">★★★★★</div><div class="text">Anti lemot, tampilannya bikin betah! Responnya juga cepet banget 😎</div></div>
+    <div class="comment"><div class="username">👤 MiraTech</div><div class="stars">★★★★★</div><div class="text">Top banget! Bisa langsung dipake tanpa ribet. Recomended 👍</div></div>
+    <div class="comment"><div class="username">👤 RezaDev</div><div class="stars">★★★★☆</div><div class="text">Desainnya modern banget, ga bikin bosen, cocok buat semua device 🧠</div></div>
+    <div class="comment"><div class="username">👤 NabilaXD</div><div class="stars">★★★★★</div><div class="text">Ga nyesel beli, pelayanan juga cepat, full support! 🥰</div></div>
+    <div class="comment"><div class="username">👤 IlhamCode</div><div class="stars">★★★★★</div><div class="text">Kualitas premium banget, sesuai harga dan fitur. Full recommended!</div></div>
+    <div class="comment"><div class="username">👤 YusufNet</div><div class="stars">★★★★☆</div><div class="text">Pakai ini makin produktif, tampilannya futuristik dan cepat ⚡</div></div>
+    <div class="comment"><div class="username">👤 AnnisaWeb</div><div class="stars">★★★★★</div><div class="text">Smooth banget walau banyak fitur. Interface-nya enak dilihat ✨</div></div>
+    <div class="comment"><div class="username">👤 KevinXR</div><div class="stars">★★★★★</div><div class="text">Fix langganan! Nyaman dipakai dan tampilannya unik 👾</div></div>
+  </div>
+
+  <!-- Tombol Navigasi -->
+  <div class="nav-buttons">
+    <a href="index.html" class="neon-btn">← BACK</a>
+
+  <!-- tsParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      background: {
+        color: "#0d0d0d"
+      },
+      particles: {
+        number: { value: 60 },
+        color: { value: "#00f2ff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 2 },
+        move: {
+          enable: true,
+          speed: 0.6
+        }
+      }
+    });
+  </script>
+</body>
+</html>
